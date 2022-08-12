@@ -5,12 +5,12 @@
     {
       "title": "Web de pedidos",
       "description": "Una web de pedidos para restaurante, que permite a los usuarios ver el menú, buscar platos, ordenar para recoger o a domicilio, pagar a través de una pasarela de pago local y darle seguimiento a la orden",
-      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK"]
+      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"]
     },
     {
       "title": "Dashboard de administración",
       "description": "Un dashboard que permite a los administradores del negocio manejar productos, categorías, clientes, pedidos, regiones de envío, y preferencias generales",
-      "tags": ["Typescript", "React", "Redux TK", "React Router", "Mantine UI"]
+      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"]
     },
     {
       "title": "Ecommerce Backend",

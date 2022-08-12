@@ -23,9 +23,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({
       <div className={projects["card-content-container"]}>
         <div className={projects["card-header"]}>
           <h4 className={projects["card-title"]}>{title}</h4>
-          <button className={projects.actionbutton}>
+          <a className={projects.actionbutton} aria-label="Github">
             <BrandGithub size={18} color="white" />
-          </button>
+          </a>
         </div>
         <p className={projects["card-description"]}>{description}</p>
         <div className={projects["tags-container"]}>

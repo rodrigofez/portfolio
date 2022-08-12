@@ -5,12 +5,12 @@
     {
       "title": "Food ordering web",
       "description": " A food ordering web that enables customers to view the menu, search dishes, order for delivery or pickup, pay through a local payment gateway, and keep track of the status of the order",
-      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK"]
+      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"]
     },
     {
       "title": "Administration dashboard",
       "description": " A dashboard that allows administrators of the business to manage the products, categories, customers, orders, delivery areas, schedules and general preferences",
-      "tags": ["Typescript", "React", "Redux TK", "React Router", "Mantine UI"]
+      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"]
     },
     {
       "title": "Ecommerce Backend",

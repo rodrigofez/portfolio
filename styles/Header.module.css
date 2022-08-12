@@ -2,6 +2,10 @@
     padding: 2rem 0;
     position: relative;
     z-index: 1;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .name {
@@ -12,7 +16,9 @@
     margin: 0;
 }
 
+
 .presentation {
+    width: fit-content;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -35,6 +41,7 @@
 }
 
 .about {
+    line-height: 1.4rem;
     padding: 2rem 0 0 0;
     margin: 0;
     display: inline-block;
@@ -44,4 +51,18 @@
     -webkit-text-fill-color: transparent;
     font-size: 1rem;
     font-weight: 600;
+}
+@media screen and (max-width: 400px) {
+    .name {
+        font-size: 2rem;
+    }
+    .presentation {
+        font-size: 0.9rem;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    .about {
+        font-size: 0.9rem;
+    }
 }

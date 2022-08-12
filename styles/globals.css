@@ -34,6 +34,9 @@ body::after{
     left: 0;
   }
 
+
+  
+
   /* width */
 ::-webkit-scrollbar {
   width: 0.5rem;

@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Section, Header, Skills, Projects, Navbar } from "../components";
 import Affix from "../components/Affix";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -23,9 +24,7 @@ const Home: NextPage = () => {
       <main>
         <Skills />
         <Projects />
-        <Section id="contact" title="Contact">
-          <div>Contacto</div>
-        </Section>
+        <Contact />
       </main>
       <footer className={styles.footer}>
         <div>Rodrigo López - Portfolio</div>
@@ -42,6 +41,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "skills",
         "projects",
         "header",
+        "contact",
       ])),
     },
   };
