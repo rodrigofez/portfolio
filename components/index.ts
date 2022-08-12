@@ -7,3 +7,7 @@ export * from "./Section";
 export * from "./Skills";
 export * from "./Navbar";
 export * from "./Projects";
+export * from "./Footer";
+export * from "./Navbar";
+export * from "./Affix";
+export * from "./Contact";

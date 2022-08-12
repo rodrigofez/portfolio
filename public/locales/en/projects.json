@@ -5,12 +5,18 @@
     {
       "title": "Food ordering web",
       "description": " A food ordering web that enables customers to view the menu, search dishes, order for delivery or pickup, pay through a local payment gateway, and keep track of the status of the order",
-      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"]
+      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"],
+      "github": null,
+      "website": "",
+      "images": [""]
     },
     {
       "title": "Administration dashboard",
       "description": " A dashboard that allows administrators of the business to manage the products, categories, customers, orders, delivery areas, schedules and general preferences",
-      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"]
+      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Ecommerce Backend",
@@ -23,17 +29,26 @@
         "Typeorm",
         "Nodemail",
         "JWT"
-      ]
+      ],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Movies API",
       "description": "A challenge that I did in order to put in practice what I've learned about Node.js, Express and MongoDB, consist of a CRUD that let users manipulate movies",
-      "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"]
+      "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Mobile POS",
       "description": "Flutter application, that integrates with SambaPOS(a desktop POS) through their GraphQL API, it was one of my first personal projects",
-      "tags": ["Flutter", "Provider state management"]
+      "tags": ["Flutter", "Provider state management"],
+      "github": "",
+      "website": null,
+      "images": [""]
     }
   ]
 }

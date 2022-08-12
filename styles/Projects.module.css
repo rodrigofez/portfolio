@@ -4,6 +4,11 @@
     gap: 1rem;
 }
 
+.links {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .card {
     width: auto;
     height: auto;
@@ -96,6 +101,53 @@
     display: inline-block;
     background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
 }
+
+.carousel-container {
+    display:flex;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel-prev {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    left: 0.5rem;
+    top:50%;
+    transform:translateY(-50%);
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
+.carousel-next {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    right: 0.5rem;
+    top:50%;
+    transform:translateY(-50%);
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
 
 @media screen and (max-width: 800px) {
     .container {

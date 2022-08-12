@@ -3,6 +3,7 @@ import button from "../styles/Button.module.css";
 import useAnimateOnScreen from "../hooks/useAnimateOnScreen";
 import { LegacyRef } from "react";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 export const Header = () => {
   const { t } = useTranslation("header");
@@ -53,12 +54,14 @@ export const Header = () => {
         <span className={header.presentation}>{t("buzzword")}</span>
         {t("postabout")}
       </h2>
-      <button
-        className={`${button.btn} ${buttonAnimation}`}
-        ref={buttonRef as LegacyRef<HTMLButtonElement>}
-      >
-        {t("download-resume")}
-      </button>
+      <a href="Rodrigo-Lopez-CV.pdf">
+        <button
+          className={`${button.btn} ${buttonAnimation}`}
+          ref={buttonRef as LegacyRef<HTMLButtonElement>}
+        >
+          {t("download-resume")}
+        </button>
+      </a>
     </header>
   );
 };

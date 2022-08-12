@@ -8,4 +8,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
+  github: string | null;
+  website: string | null;
+  images: string[];
 }

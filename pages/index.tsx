@@ -4,9 +4,15 @@ import styles from "../styles/Home.module.css";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { Section, Header, Skills, Projects, Navbar } from "../components";
-import Affix from "../components/Affix";
-import Contact from "../components/Contact";
+import {
+  Header,
+  Skills,
+  Projects,
+  Navbar,
+  Footer,
+  Affix,
+  Contact,
+} from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -26,9 +32,7 @@ const Home: NextPage = () => {
         <Projects />
         <Contact />
       </main>
-      <footer className={styles.footer}>
-        <div>Rodrigo López - Portfolio</div>
-      </footer>
+      <Footer />
       <Affix />
     </div>
   );

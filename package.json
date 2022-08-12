@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "embla-carousel-react": "^7.0.0",
     "intersection-observer": "^0.12.2",
     "next": "12.2.4",
     "next-i18next": "^11.3.0",

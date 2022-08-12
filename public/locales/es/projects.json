@@ -1,16 +1,22 @@
 {
   "title": "Proyectos",
-  "subtitle": "que he construido",
+  "subtitle": "que he desarrollado",
   "projectsList": [
     {
       "title": "Web de pedidos",
       "description": "Una web de pedidos para restaurante, que permite a los usuarios ver el menú, buscar platos, ordenar para recoger o a domicilio, pagar a través de una pasarela de pago local y darle seguimiento a la orden",
-      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"]
+      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"],
+      "github": null,
+      "website": "",
+      "images": [""]
     },
     {
       "title": "Dashboard de administración",
       "description": "Un dashboard que permite a los administradores del negocio manejar productos, categorías, clientes, pedidos, regiones de envío, y preferencias generales",
-      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"]
+      "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Ecommerce Backend",
@@ -23,17 +29,26 @@
         "Typeorm",
         "Nodemail",
         "JWT"
-      ]
+      ],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Movies API",
       "description": "Un reto que hice para poner en práctica el conocimiento que he adquirido de Node.js, Express y MongoDB, consiste en un CRUD que permite a los usuarios manipular peliculas",
-      "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"]
+      "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"],
+      "github": "",
+      "website": null,
+      "images": [""]
     },
     {
       "title": "Mobile POS",
       "description": "Aplicación mobile desarrollada con Flutter, que se integra con SambaPOS(un POS de escritorio) a través de su GraphQL API, fue uno de mis primeros proyectos personales",
-      "tags": ["Flutter", "Provider state management"]
+      "tags": ["Flutter", "Provider state management"],
+      "github": "",
+      "website": null,
+      "images": [""]
     }
   ]
 }
