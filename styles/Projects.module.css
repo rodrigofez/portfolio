@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.70rem;
+    position: relative;
+    background: #1c2124;
+    padding: 0.75rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.actionbutton {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    background-color: #445055;
+    flex-direction: column;
+    padding: 3px 0 0 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-content-container {
+    flex-grow: 1;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    font-size: 1rem;
+}
+
+.card-description {
+    margin: 0;
+    padding: 0;
+    color: #8d9ba5;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card-image-container {
+    position: relative;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: #445055;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
+    background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-content-container {
+        margin-right: 0;
+    }
+}

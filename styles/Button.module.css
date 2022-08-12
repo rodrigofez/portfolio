@@ -1,0 +1,22 @@
+.btn {
+    margin: 2rem 0;
+    color: black;
+    background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

@@ -1,7 +1,19 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { Section } from "../components/Section";
+
+import projectsData from "../data/projects.json";
+import skillsData from "../data/skills.json";
+
+import {
+  Header,
+  ProjectCard,
+  ProjectsContainer,
+  SkillCard,
+  SkillsContainer,
+} from "../components";
+import { Navbar } from "../components/Navbar";
 
 const Home: NextPage = () => {
   return (
@@ -14,13 +26,33 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <div>main</div>
+      <Navbar />
+      <Header />
+      <main>
+        <Section
+          id="skills"
+          title="Skills and tools"
+          subtitle="that I've worked with"
+        >
+          <SkillsContainer>
+            {skillsData.map((skill, index) => (
+              <SkillCard key={skill.name} {...skill} index={index} />
+            ))}
+          </SkillsContainer>
+        </Section>
+        <Section id="projects" title="Projects" subtitle="that I've built">
+          <ProjectsContainer>
+            {projectsData.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </ProjectsContainer>
+        </Section>
+        <Section id="contact" title="Contact">
+          <div>Conracto</div>
+        </Section>
       </main>
-
       <footer className={styles.footer}>
-        <div>footer</div>
+        <div>Rodrigo López - Portfolio</div>
       </footer>
     </div>
   );

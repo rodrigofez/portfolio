@@ -1,0 +1,23 @@
+.container {
+    margin: 0 0 3rem 0;
+    scroll-margin-top: 1.5rem;
+}
+
+.title {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: left;
+    position:relative;
+    font-size: xx-large;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    color: #8d9ba5;
+    font-weight: 600;
+    text-align: left;
+    position:relative;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,38 @@
+
+.initialState {
+    opacity: 0;
+}
+
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translate(0, 3em);
+    }
+    to {
+        opacity: 1;        
+        transform: translate(0, 0);
+    }
+}
+
+.fadeInFromTop {
+    display: inline-block;
+    animation: fadeInFromTop 1s;
+}
+
+
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translate(-24px, 0);
+    }
+    to {
+        opacity: 1;        
+        transform: translate(0, 0);
+    }
+}
+
+.fadeInFromLeft {
+    animation: fadeInFromLeft 0.7s;
+}

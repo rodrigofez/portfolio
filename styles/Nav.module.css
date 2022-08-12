@@ -1,0 +1,12 @@
+.container {
+    padding:  2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.link {
+    color: #8d9ba5;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 600;
+}

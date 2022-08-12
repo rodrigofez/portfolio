@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  max-width: 1080px;
+  margin:    0 auto;
 }
 
 .main {
@@ -16,7 +18,11 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-size: small;
+  border-top: 1px solid #445055;
   justify-content: center;
   align-items: center;
 }

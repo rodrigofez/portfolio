@@ -1,0 +1,80 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+}
+
+
+.skillcard {
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: relative;
+    background: #1c2124;
+    aspect-ratio: 1;
+    padding: 0.75rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.content {
+    position: relative;
+    border-radius: 0.3rem;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #445055;
+    font-size: small;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0) translate(-50%, 0);
+    }
+    to {
+        opacity: 1;        
+        transform: scale(1) translate(-50%, 0);
+    }
+}
+.skillcard:hover .tooltip {
+    display: block;
+    animation: fadeIn 0.1s;
+}
+
+.skillcard:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(7, 1fr);
+    }
+ }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+ }
+
+@media screen and (max-width: 768px) {
+   .container {
+       grid-template-columns: repeat(5, 1fr);
+   }
+}
+
+ @media screen and (max-width: 640px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+ }
