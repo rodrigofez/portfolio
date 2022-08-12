@@ -9,4 +9,12 @@
     text-decoration: none;
     margin-right: 1rem;
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

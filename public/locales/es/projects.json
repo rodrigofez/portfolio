@@ -1,0 +1,39 @@
+{
+  "title": "Proyectos",
+  "subtitle": "que he construido",
+  "projectsList": [
+    {
+      "title": "Web de pedidos",
+      "description": "Una web de pedidos para restaurante, que permite a los usuarios ver el menú, buscar platos, ordenar para recoger o a domicilio, pagar a través de una pasarela de pago local y darle seguimiento a la orden",
+      "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK"]
+    },
+    {
+      "title": "Dashboard de administración",
+      "description": "Un dashboard que permite a los administradores del negocio manejar productos, categorías, clientes, pedidos, regiones de envío, y preferencias generales",
+      "tags": ["Typescript", "React", "Redux TK", "React Router", "Mantine UI"]
+    },
+    {
+      "title": "Ecommerce Backend",
+      "description": "Una API que expone varios endpoints para comunicar con una base de datos PostgresSQL tanto la aplicación de clientes, como la de administración",
+      "tags": [
+        "Typescript",
+        "Nest.js",
+        "Postgresql",
+        "Passport.js",
+        "Typeorm",
+        "Nodemail",
+        "JWT"
+      ]
+    },
+    {
+      "title": "Movies API",
+      "description": "Un reto que hice para poner en práctica el conocimiento que he adquirido de Node.js, Express y MongoDB, consiste en un CRUD que permite a los usuarios manipular peliculas",
+      "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"]
+    },
+    {
+      "title": "Mobile POS",
+      "description": "Aplicación mobile desarrollada con Flutter, que se integra con SambaPOS(un POS de escritorio) a través de su GraphQL API, fue uno de mis primeros proyectos personales",
+      "tags": ["Flutter", "Provider state management"]
+    }
+  ]
+}

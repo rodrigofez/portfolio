@@ -2,8 +2,11 @@ import header from "../styles/Header.module.css";
 import button from "../styles/Button.module.css";
 import useAnimateOnScreen from "../hooks/useAnimateOnScreen";
 import { LegacyRef } from "react";
+import { useTranslation } from "next-i18next";
 
 export const Header = () => {
+  const { t } = useTranslation("header");
+
   const [presentationRef, presentationAnimation] = useAnimateOnScreen({
     animationClass: "fadeInFromLeft",
   });
@@ -34,29 +37,27 @@ export const Header = () => {
         className={`${header.presentation} ${presentationAnimation}`}
         ref={presentationRef}
       >
-        Hi, my name is
+        {t("presentation")}
       </h2>
       <h1 className={`${header.name} ${nameAnimation}`} ref={nameRef}>
-        Rodrigo López
+        {t("name")}
       </h1>
       <h2
         className={`${header.subtitle} ${subtitleAnimation}`}
         ref={subtitleRef}
       >
-        a Frontend Developer
+        {t("subtitle")}
       </h2>
       <h2 className={`${header.about} ${aboutAnimation}`} ref={aboutRef}>
-        based in El Salvador, I started this journey 2 years ago, motivated by
-        the passion that I&apos;ve always felt about web, mobile applications
-        and transforming ideas into reality. I specialize in{" "}
-        <span className={header.presentation}>React</span>, building exceptional
-        digital experiences.
+        {t("preabout")}
+        <span className={header.presentation}>{t("buzzword")}</span>
+        {t("postabout")}
       </h2>
       <button
         className={`${button.btn} ${buttonAnimation}`}
         ref={buttonRef as LegacyRef<HTMLButtonElement>}
       >
-        Download resume
+        {t("download-resume")}
       </button>
     </header>
   );

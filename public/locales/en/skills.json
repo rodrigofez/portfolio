@@ -1,4 +1,7 @@
-[
+{
+  "title": "Skills and tools",
+  "subtitle": "I've worked with",
+  "skillsList": [
     { "name": "React", "logo": "/images/React.svg" },
     { "name": "Next.js", "logo": "/images/Nextjs.svg" },
     { "name": "HTML", "logo": "/images/HTML.svg" },
@@ -10,5 +13,5 @@
     { "name": "Nodejs", "logo": "/images/nodejs.svg" },
     { "name": "Figma", "logo": "/images/Figma.svg" },
     { "name": "Nest.js", "logo": "/images/nestjs.svg" }
-]
-
+  ]
+}

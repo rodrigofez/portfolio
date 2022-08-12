@@ -1,30 +1,32 @@
+import { useTranslation } from "next-i18next";
 import nav from "../styles/Nav.module.css";
 import NavLink from "./NavLink";
 
 const links = [
   {
-    title: "About me",
+    title: "about",
     src: "#about",
   },
   {
-    title: "Skills",
+    title: "skills",
     src: "#skills",
   },
   {
-    title: "Projects",
+    title: "projects",
     src: "#projects",
   },
   {
-    title: "Contact",
+    title: "contact",
     src: "#contact",
   },
 ];
 
 export const Navbar = ({}) => {
+  const { t } = useTranslation("nav");
   return (
     <nav className={nav.container}>
-      {links.map((link, index) => (
-        <NavLink key={link.src} {...link} index={index} />
+      {links.map(({ src, title }, index) => (
+        <NavLink key={src} src={src} title={t(title)} index={index} />
       ))}
     </nav>
   );
