@@ -34,6 +34,22 @@ body::after{
     left: 0;
   }
 
+  /* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #445055;
+  border-radius: 10px;
+}
+
 
 * {
   box-sizing: border-box;

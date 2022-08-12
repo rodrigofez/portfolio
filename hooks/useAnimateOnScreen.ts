@@ -28,8 +28,6 @@ export const useAnimateOnScreen = ({ animationClass, delay = 0 }: Props) => {
       ) => {
         const el = entries[0];
 
-        console.log(el.isIntersecting);
-
         if (el.isIntersecting) {
           setIsTicking(true);
           setTimeout(() => setOnScreen(true), delay);

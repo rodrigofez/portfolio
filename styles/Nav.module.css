@@ -2,6 +2,9 @@
     padding:  2rem 0;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .link {
@@ -17,4 +20,20 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.flag {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.25rem;
+    margin: 0;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+
+.flag:hover {
+    transform: scale(0.95);
 }
