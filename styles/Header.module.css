@@ -2,7 +2,7 @@
     padding: 2rem 0;
     position: relative;
     z-index: 1;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,12 +10,11 @@
 
 .name {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
     padding: 0;
     margin: 0;
 }
-
 
 .presentation {
     width: fit-content;
@@ -26,7 +25,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1rem;   
+    font-size: 1.25rem;   
 }
 
 .subtitle {
@@ -52,6 +51,27 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+.buzzword {
+    margin: 0;
+    display: inline-block;
+    background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-height: 480px) {
+    .container {
+        height: auto;
+    }
+}
+    
+
 @media screen and (max-width: 400px) {
     .name {
         font-size: 2rem;

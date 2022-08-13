@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const useAnimateOnScreen = ({ animationClass, delay = 0 }: Props) => {
-  const elementRef = useRef<HTMLDivElement | null>(null);
+  const elementRef = useRef<any | null>(null);
   const [onScreen, setOnScreen] = useState(false);
   const [isTicking, setIsTicking] = useState(false);
 
@@ -22,6 +22,7 @@ export const useAnimateOnScreen = ({ animationClass, delay = 0 }: Props) => {
         : require("intersection-observer")
     ).then(() => {
       if (onScreen || isTicking) return;
+
       const onChange = (
         entries: IntersectionObserverEntry[],
         observer: IntersectionObserver

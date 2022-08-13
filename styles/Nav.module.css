@@ -6,13 +6,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    height: 80px;
 }
 
 .hamburger {
     display: none;
 }
-
 
 .link {
     color: #8d9ba5;
@@ -22,12 +21,16 @@
     transition: all 0.3s ease-in-out;
 }
 
+.div {
+    pointer-events: none;
+}
+
 .link:hover {
-    transform: scale(0.95);
     background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: scale(0.95) !important;
 }
 
 .flag {

@@ -82,11 +82,11 @@ export const ProjectCard: FC<Project> = ({
               key={image}
               className={`embla__slide ${projects["carousel-slide"]}`}
             >
-              <Image src={image} alt={title + index}></Image>
+              <Image src={image} alt={title + index} layout="fill"></Image>
             </div>
           ))}
         </div>
-        {images.length > 1 && (
+        {images.length > 0 && (
           <>
             <button
               className={`embla__prev ${projects["carousel-prev"]}`}

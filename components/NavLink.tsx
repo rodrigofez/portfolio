@@ -19,8 +19,8 @@ export const NavLink: FC<NavLinkProps> = ({ title, src, index, onClick }) => {
     <a
       onClick={onClick}
       className={`${nav.link} ${animation}`}
+      ref={elementRef}
       href={src}
-      ref={elementRef as LegacyRef<HTMLAnchorElement>}
     >
       {title}
     </a>

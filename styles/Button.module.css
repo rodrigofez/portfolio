@@ -1,12 +1,14 @@
 .btn {
+    text-decoration: none;
     position: relative;
-    margin: 2rem 0;
     width: fit-content;
     color: black;
+    display: block;
     background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     font: inherit;
+    text-decoration: none;
     font-weight: 700;
     font-size: 0.9rem;
     border: none;
@@ -14,7 +16,12 @@
     cursor: pointer;
     overflow: hidden;
 }
-
+.a {
+    margin: 2rem 0;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
 .btn:hover {
     opacity: 0.9;
     transform: scale(1.05);
@@ -32,13 +39,14 @@
 .animation {
     pointer-events: none;
     width: 100%;
+    text-decoration: none;
     height: 100%;
     left: 0;
     position: absolute; top: 0;
     transform: translateX(-150px);
-    opacity: 0.8;
+    opacity: 0.4;
     transition: all 1s ease-in-out;
-    background: linear-gradient(45deg, transparent, transparent, transparent, white, transparent, transparent, transparent );
+    background: linear-gradient(45deg,  transparent, transparent, white, transparent, transparent  );
 }
 
 .btn:hover .animation {

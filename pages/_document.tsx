@@ -13,6 +13,16 @@ class MyDocument extends Document {
   ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
 
+    const originalRenderPage = ctx.renderPage;
+
+    ctx.renderPage = () =>
+      originalRenderPage({
+        // Useful for wrapping the whole react tree
+        enhanceApp: (App) => App,
+        // Useful for wrapping in a per-page basis
+        enhanceComponent: (Component) => Component,
+      });
+
     return initialProps;
   }
 
@@ -26,6 +36,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <script>0</script>
           <Main />
           <NextScript />
         </body>

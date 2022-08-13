@@ -16,7 +16,7 @@
       "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"],
       "github": "",
       "website": null,
-      "images": [""]
+      "images": []
     },
     {
       "title": "Ecommerce Backend",
@@ -32,7 +32,7 @@
       ],
       "github": "",
       "website": null,
-      "images": [""]
+      "images": []
     },
     {
       "title": "Movies API",
@@ -40,7 +40,7 @@
       "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"],
       "github": "",
       "website": null,
-      "images": [""]
+      "images": []
     },
     {
       "title": "Mobile POS",
@@ -48,7 +48,7 @@
       "tags": ["Flutter", "Provider state management"],
       "github": "",
       "website": null,
-      "images": [""]
+      "images": []
     }
   ]
 }

@@ -51,18 +51,17 @@ export const Header = () => {
       </h2>
       <h2 className={`${header.about} ${aboutAnimation}`} ref={aboutRef}>
         {t("preabout")}
-        <span className={header.presentation}>{t("buzzword")}</span>
+        <span className={header.buzzword}>{t("buzzword")}</span>
         {t("postabout")}
       </h2>
-      <a href="/Rodrigo_Lopez_CV.pdf" download>
-        <button
-          className={`${button.btn} ${buttonAnimation}`}
-          ref={buttonRef as LegacyRef<HTMLButtonElement>}
-        >
-          {t("download-resume")}
-          <div className={button.animation}></div>
-        </button>
-      </a>
+      <div className={buttonAnimation} ref={buttonRef}>
+        <a className={button.a} href="/Rodrigo_Lopez_CV.pdf" download>
+          <button className={button.btn}>
+            {t("download-resume")}
+            <div className={button.animation}></div>
+          </button>
+        </a>
+      </div>
     </header>
   );
 };
