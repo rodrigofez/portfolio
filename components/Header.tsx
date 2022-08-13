@@ -54,12 +54,13 @@ export const Header = () => {
         <span className={header.presentation}>{t("buzzword")}</span>
         {t("postabout")}
       </h2>
-      <a href="Rodrigo-Lopez-CV.pdf">
+      <a href="/Rodrigo_Lopez_CV.pdf" download>
         <button
           className={`${button.btn} ${buttonAnimation}`}
           ref={buttonRef as LegacyRef<HTMLButtonElement>}
         >
           {t("download-resume")}
+          <div className={button.animation}></div>
         </button>
       </a>
     </header>

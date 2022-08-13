@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           name="description"
           content="Rodrigo López frontend developer portfolio"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <Navbar />
       <Header />

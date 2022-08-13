@@ -23,6 +23,7 @@
 }
 
 .link:hover {
+    transform: scale(0.95);
     background: -webkit-linear-gradient(35deg,#ade1ea, #f4b3ef, #ffd84c);
     background-clip: text;
     -webkit-background-clip: text;

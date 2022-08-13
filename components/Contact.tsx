@@ -19,7 +19,7 @@ export const Contact = () => {
       <div className={styles.container}>
         {contactList.map((contact) => (
           <div className={styles.card} key={contact.title}>
-            <contact.icon size={40} strokeWidth="1.5px"></contact.icon>
+            <contact.icon size={28} strokeWidth="1.5px"></contact.icon>
           </div>
         ))}
       </div>
