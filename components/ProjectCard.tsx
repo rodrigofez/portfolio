@@ -75,34 +75,38 @@ export const ProjectCard: FC<Project> = ({
           ))}
         </div>
       </div>
-      <div className={`${projects["card-image-container"]}`} ref={emblaRef}>
-        <div className={`embla__container ${projects["carousel-container"]}`}>
-          {images.map((image, index) => (
-            <div
-              key={image}
-              className={`embla__slide ${projects["carousel-slide"]}`}
-            >
-              <Image src={image} alt={title + index} layout="fill"></Image>
-            </div>
-          ))}
+      {images.length > 0 ? (
+        <div className={`${projects["card-image-container"]}`} ref={emblaRef}>
+          <div className={`embla__container ${projects["carousel-container"]}`}>
+            {images.map((image, index) => (
+              <div
+                key={image}
+                className={`embla__slide ${projects["carousel-slide"]}`}
+              >
+                <Image src={image} alt={title + index} layout="fill"></Image>
+              </div>
+            ))}
+          </div>
+          {images.length > 1 && (
+            <>
+              <button
+                className={`embla__prev ${projects["carousel-prev"]}`}
+                onClick={scrollPrev}
+              >
+                <ArrowLeft />
+              </button>
+              <button
+                className={`embla__next ${projects["carousel-next"]}`}
+                onClick={scrollNext}
+              >
+                <ArrowRight />
+              </button>
+            </>
+          )}
         </div>
-        {images.length > 0 && (
-          <>
-            <button
-              className={`embla__prev ${projects["carousel-prev"]}`}
-              onClick={scrollPrev}
-            >
-              <ArrowLeft />
-            </button>
-            <button
-              className={`embla__next ${projects["carousel-next"]}`}
-              onClick={scrollNext}
-            >
-              <ArrowRight />
-            </button>
-          </>
-        )}
-      </div>
+      ) : (
+        <div className={projects["card-image-container"]}></div>
+      )}
     </div>
   );
 };
