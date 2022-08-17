@@ -7,6 +7,7 @@ export interface Projects {
 export interface Project {
   title: string;
   description: string;
+  type: "Frontend" | "Mobile" | "Backend";
   tags: string[];
   github: string | null;
   website: string | null;

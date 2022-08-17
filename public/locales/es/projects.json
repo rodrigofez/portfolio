@@ -12,15 +12,35 @@
     },
     {
       "title": "Dashboard de administración",
+      "type": "Frontend",
       "description": "Un dashboard que permite a los administradores del negocio manejar productos, categorías, clientes, pedidos, regiones de envío, y preferencias generales",
       "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"],
-      "github": "https://github.com/RodrigoFLP/admin-techpos-shop",
+      "github": "https://github.com/RodrigoFLP/food-order-admin",
       "website": null,
       "images": ["/images/dashboard/1.png", "/images/dashboard/2.png", "/images/dashboard/3.png", "/images/dashboard/4.png", "/images/dashboard/5.png", "/images/dashboard/6.png", "/images/dashboard/7.png", "/images/dashboard/8.png", "/images/dashboard/9.png", "/images/dashboard/10.png"]
     },
     {
+      "title": "Este portafolio",
+      "type": "Frontend",
+      "description": "Desarrollado con Next.js, aplicando estilos con CSS Modules. Incluye internacionalización con SSG, y animaciones en demanda con Intersection Observer, asegurando compatibilidad con un polyfill",
+      "tags": ["Next.js", "React", "CSS Modules", "Intl"],
+      "github": "https://github.com/RodrigoFLP/portfolio",
+      "website": null,
+      "images": ["/images/portfolio/1.png"]
+    },
+    {
+      "title": "Mobile POS",
+      "type": "Mobile",
+      "description": "Aplicación mobile desarrollada con Flutter, que se integra con SambaPOS(un POS de escritorio) a través de su GraphQL API, fue uno de mis primeros proyectos personales",
+      "tags": ["Flutter", "Provider state management"],
+      "github": "https://github.com/RodrigoFLP/techpos_app",
+      "website": null,
+      "images": []
+    },
+    {
       "title": "Ecommerce Backend",
       "description": "Una API que expone varios endpoints para comunicar con una base de datos PostgresSQL tanto la aplicación de clientes, como la de administración",
+      "type": "Backend",
       "tags": [
         "Typescript",
         "Nest.js",
@@ -30,25 +50,19 @@
         "Nodemail",
         "JWT"
       ],
-      "github": "",
+      "github": "https://github.com/RodrigoFLP/food-order-backend",
       "website": null,
-      "images": []
+      "images": ["/images/ecommerceback/1.png"]
     },
     {
+
       "title": "Movies API",
       "description": "Un reto que hice para poner en práctica el conocimiento que he adquirido de Node.js, Express y MongoDB, consiste en un CRUD que permite a los usuarios manipular peliculas",
+      "type": "Backend",
       "tags": ["Javascript", "Node.js", "Mongodb", "Passport.js", "Typeorm"],
-      "github": "",
+      "github": "https://github.com/RodrigoFLP/movies-api",
       "website": null,
-      "images": []
-    },
-    {
-      "title": "Mobile POS",
-      "description": "Aplicación mobile desarrollada con Flutter, que se integra con SambaPOS(un POS de escritorio) a través de su GraphQL API, fue uno de mis primeros proyectos personales",
-      "tags": ["Flutter", "Provider state management"],
-      "github": "",
-      "website": null,
-      "images": []
+      "images": ["/images/moviesapi/1.png"]
     }
   ]
 }

@@ -9,6 +9,16 @@
     gap: 0.5rem;
 }
 
+.subtitle {
+    margin: 1.5rem 0 1.5rem 1rem;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    font-size: 1.25rem;
+}
+
 .card {
     width: auto;
     height: auto;
@@ -30,6 +40,7 @@
     display: flex;
     background-color: #445055;
     flex-direction: column;
+    margin: 0;
     padding: 3px 0 0 0;
     justify-items: center;
     align-items: center;

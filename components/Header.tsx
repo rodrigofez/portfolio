@@ -14,22 +14,22 @@ export const Header = () => {
 
   const [nameRef, nameAnimation] = useAnimateOnScreen({
     animationClass: "fadeInFromLeft",
-    delay: 50,
+    delay: 25,
   });
 
   const [subtitleRef, subtitleAnimation] = useAnimateOnScreen({
     animationClass: "fadeInFromLeft",
-    delay: 100,
+    delay: 50,
   });
 
   const [aboutRef, aboutAnimation] = useAnimateOnScreen({
     animationClass: "fadeInFromLeft",
-    delay: 150,
+    delay: 75,
   });
 
   const [buttonRef, buttonAnimation] = useAnimateOnScreen({
     animationClass: "fadeInFromLeft",
-    delay: 200,
+    delay: 100,
   });
 
   return (

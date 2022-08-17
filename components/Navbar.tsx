@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import nav from "../styles/Nav.module.css";
 import NavLink from "./NavLink";
+import Animation from "../styles/Animations.module.css";
 
 const links = [
   {
@@ -52,6 +53,7 @@ export const Navbar = ({}) => {
           {locale === "en" ? (
             <Link href={route} locale="es">
               <Image
+                className={Animation.fadeInFromTop}
                 src="/es.svg"
                 alt="es flag"
                 objectFit="cover"

@@ -18,13 +18,14 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-export const ProjectCard: FC<Project> = ({
+export const ProjectCard: FC<Project & { showImage?: boolean }> = ({
   title,
   description,
   tags,
   github,
   images,
   website,
+  showImage = true,
 }) => {
   const [elementRef, animation] = useAnimateOnScreen({
     animationClass: "fadeInFromTop",
@@ -79,43 +80,48 @@ export const ProjectCard: FC<Project> = ({
           ))}
         </div>
       </div>
-      {images.length > 0 ? (
-        <div className={`${projects["card-image-container"]}`} ref={emblaRef}>
-          <div className={`embla__container ${projects["carousel-container"]}`}>
-            {images.map((image, index) => (
-              <div
-                key={image}
-                className={`embla__slide ${projects["carousel-slide"]}`}
-              >
-                <Image
-                  src={image}
-                  alt={title + index}
-                  layout="fill"
-                  unoptimized
-                />
-              </div>
-            ))}
+      {showImage &&
+        (images.length > 0 ? (
+          <div className={`${projects["card-image-container"]}`} ref={emblaRef}>
+            <div
+              className={`embla__container ${projects["carousel-container"]}`}
+            >
+              {images.map((image, index) => (
+                <div
+                  key={image}
+                  className={`embla__slide ${projects["carousel-slide"]}`}
+                >
+                  <Image
+                    src={image}
+                    alt={title + index}
+                    layout="fill"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+            {images.length > 1 && (
+              <>
+                <button
+                  className={`embla__prev ${projects["carousel-prev"]}`}
+                  onClick={scrollPrev}
+                  aria-label="Go to prev image"
+                >
+                  <ArrowLeft />
+                </button>
+                <button
+                  className={`embla__next ${projects["carousel-next"]}`}
+                  onClick={scrollNext}
+                  aria-label="Go to next image"
+                >
+                  <ArrowRight />
+                </button>
+              </>
+            )}
           </div>
-          {images.length > 1 && (
-            <>
-              <button
-                className={`embla__prev ${projects["carousel-prev"]}`}
-                onClick={scrollPrev}
-              >
-                <ArrowLeft />
-              </button>
-              <button
-                className={`embla__next ${projects["carousel-next"]}`}
-                onClick={scrollNext}
-              >
-                <ArrowRight />
-              </button>
-            </>
-          )}
-        </div>
-      ) : (
-        <div className={projects["card-image-container"]}></div>
-      )}
+        ) : (
+          <div className={projects["card-image-container"]}></div>
+        ))}
     </div>
   );
 };

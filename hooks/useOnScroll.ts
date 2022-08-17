@@ -8,7 +8,7 @@ export const useOnScroll = ({ margin = 200 }) => {
       const newShowFixed = window.scrollY > margin;
       showFixed !== newShowFixed && setShowFixed(newShowFixed);
     };
-    document.addEventListener("scroll", onScroll);
+    document.addEventListener("scroll", onScroll, { passive: true });
 
     return () => document.removeEventListener("scroll", onScroll);
   });

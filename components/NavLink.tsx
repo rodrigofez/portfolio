@@ -12,7 +12,7 @@ interface NavLinkProps {
 export const NavLink: FC<NavLinkProps> = ({ title, src, index, onClick }) => {
   const [elementRef, animation] = useAnimateOnScreen({
     animationClass: "fadeInFromTop",
-    delay: 50 * index,
+    delay: 25 * index,
   });
 
   return (
