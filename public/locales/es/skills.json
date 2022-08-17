@@ -3,16 +3,18 @@
     "subtitle": "que he utilizado",
     "skillsList": [
       { "name": "React", "logo": "/images/logos/React.svg" },
-      { "name": "Next.js", "logo": "/images/logos/Nextjs.svg" },
-      { "name": "HTML", "logo": "/images/logos/HTML.svg" },
-      { "name": "CSS", "logo": "/images/logos/css.svg" },
-      { "name": "Javascript", "logo": "/images/logos/Javascript.svg" },
-      { "name": "Typescript", "logo": "/images/logos/Typescript.svg" },
-      { "name": "Redux", "logo": "/images/logos/redux.svg" },
-      { "name": "Tailwind", "logo": "/images/logos/Tailwind.svg" },
-      { "name": "Nodejs", "logo": "/images/logos/nodejs.svg" },
-      { "name": "Figma", "logo": "/images/logos/Figma.svg" },
-      { "name": "Nest.js", "logo": "/images/logos/nestjs.svg" }
+    { "name": "Next.js", "logo": "/images/logos/Nextjs.svg" },
+    { "name": "HTML", "logo": "/images/logos/HTML.svg" },
+    { "name": "CSS", "logo": "/images/logos/css.svg" },
+    { "name": "Javascript", "logo": "/images/logos/Javascript.svg" },
+    { "name": "Typescript", "logo": "/images/logos/Typescript.svg" },
+    { "name": "Redux", "logo": "/images/logos/redux.svg" },
+    { "name": "Tailwind", "logo": "/images/logos/Tailwind.svg" },
+    { "name": "Nodejs", "logo": "/images/logos/nodejs.svg" },
+    { "name": "Figma", "logo": "/images/logos/Figma.svg" },
+    { "name": "Nest.js", "logo": "/images/logos/nestjs.svg" },
+    {"name": "TypeORM", "logo": "/images/logos/typeorm.png"},
+    {"name": "Flutter", "logo": "/images/logos/Flutter.svg"}
     ]
   }
   

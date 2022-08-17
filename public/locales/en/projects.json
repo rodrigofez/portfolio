@@ -7,16 +7,16 @@
       "description": " A food ordering web that enables customers to view the menu, search dishes, order for delivery or pickup, pay through a local payment gateway, and keep track of the status of the order",
       "tags": ["Typescript", "Next.js", "React", "Tailwind", "Redux TK", "RTK Query"],
       "github": null,
-      "website": "",
-      "images": ["/images/foodordering/1.png"]
+      "website": "https://panchos.com.sv",
+      "images": ["/images/foodordering/1.png", "/images/foodordering/2.png", "/images/foodordering/3.png", "/images/foodordering/4.png", "/images/foodordering/5.png", "/images/foodordering/6.png"]
     },
     {
       "title": "Administration dashboard",
       "description": " A dashboard that allows administrators of the business to manage the products, categories, customers, orders, delivery areas, schedules and general preferences",
       "tags": ["Typescript", "React", "Redux TK", "RTK Query", "React Router", "Mantine UI"],
-      "github": "",
+      "github": "https://github.com/RodrigoFLP/admin-techpos-shop",
       "website": null,
-      "images": []
+      "images": ["/images/dashboard/1.png", "/images/dashboard/2.png", "/images/dashboard/3.png", "/images/dashboard/4.png", "/images/dashboard/5.png", "/images/dashboard/6.png", "/images/dashboard/7.png", "/images/dashboard/8.png", "/images/dashboard/9.png", "/images/dashboard/10.png"]
     },
     {
       "title": "Ecommerce Backend",

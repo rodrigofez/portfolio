@@ -50,6 +50,8 @@ export const ProjectCard: FC<Project> = ({
               <a
                 className={projects.actionbutton}
                 aria-label={title + website}
+                rel="noopener noreferrer"
+                target="_blank"
                 href={github}
               >
                 <BrandGithub size={18} color="white" />
@@ -60,6 +62,8 @@ export const ProjectCard: FC<Project> = ({
                 className={projects.actionbutton}
                 aria-label={title + website}
                 href={website}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <ExternalLink size={18} color="white" />
               </a>
@@ -83,7 +87,12 @@ export const ProjectCard: FC<Project> = ({
                 key={image}
                 className={`embla__slide ${projects["carousel-slide"]}`}
               >
-                <Image src={image} alt={title + index} layout="fill"></Image>
+                <Image
+                  src={image}
+                  alt={title + index}
+                  layout="fill"
+                  unoptimized
+                />
               </div>
             ))}
           </div>

@@ -17,7 +17,7 @@
 
 .fadeInFromTop {
     display: inline-block;
-    animation: fadeInFromTop 1s;
+    animation: fadeInFromTop 0.5s ease-in-out;
 }
 
 
