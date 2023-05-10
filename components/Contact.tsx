@@ -5,10 +5,10 @@ import { Section } from "./Section";
 import styles from "../styles/Contact.module.css";
 
 const contactList = [
-  { title: "Github", src: "", icon: BrandGithub },
-  { title: "Linkedin", src: "", icon: BrandLinkedin },
+  { title: "Github", src: "https://github.com/rodrigofez", icon: BrandGithub },
+  { title: "Linkedin", src: "https://www.linkedin.com/in/rodrigolopezdev/", icon: BrandLinkedin },
   { title: "Phone", src: "", icon: Phone },
-  { title: "Email", src: "", icon: Mail },
+  { title: "Email", src: "mailto:rodrigolp0521@gmail.com", icon: Mail },
 ];
 
 export const Contact = () => {
