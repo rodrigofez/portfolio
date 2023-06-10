@@ -54,14 +54,6 @@ export const Header = () => {
         <span className={header.buzzword}>{t("buzzword")}</span>
         {t("postabout")}
       </h2>
-      <div className={buttonAnimation} ref={buttonRef}>
-        <a className={button.a} href="/Rodrigo_Lopez_CV.pdf" download>
-          <button className={button.btn}>
-            {t("download-resume")}
-            <div className={button.animation}></div>
-          </button>
-        </a>
-      </div>
     </header>
   );
 };
