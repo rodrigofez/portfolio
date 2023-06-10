@@ -17,8 +17,8 @@ export const Contact = () => {
     <Section id="contact" title={t("title")} subtitle={t("subtitle")}>
       <div className={styles.container}>
         {contactList.map((contact) => (
-          <a href={contact.src}>
-          <div className={styles.card} key={contact.title}>
+          <a href={contact.src} key={contact.title}>
+          <div className={styles.card}>
             <contact.icon size={28} strokeWidth="1.5px"></contact.icon>
           </div>
           </a>
