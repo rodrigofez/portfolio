@@ -14,6 +14,7 @@
     { "name": "Figma", "logo": "/images/logos/Figma.svg" },
     { "name": "Nest.js", "logo": "/images/logos/nestjs.svg" },
     {"name": "TypeORM", "logo": "/images/logos/typeorm.png"},
+    {"name": "Flutter", "logo": "/images/logos/Flutter.svg"},
     {"name": "Flutter", "logo": "/images/logos/Flutter.svg"}
     ]
   }
